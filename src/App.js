@@ -57,7 +57,7 @@ const App = () => {
       <h1>Country App</h1>
       <Search onSearch={handleSearch} />
       {isLoading && <h1>Loading....</h1>}
-      {error && <h3>{error.message}</h3>}
+      {error && <h3 style={{ textAlign: "center", paddingTop: "50px" }}>{error.message}</h3>}
       {countries && <Countries countries={filteredCountries} onRemoveCountry={handleRemoveCountry} />}
     </div>
   );
